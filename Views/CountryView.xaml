@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="flatVPN.Views.CountryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:flatVPN.Views"
+             mc:Ignorable="d" 
+             Height="75" Width="300">
+    <Border CornerRadius="8" Background="#2a2e33">
+        <Grid>
+            <Rectangle HorizontalAlignment="Left" VerticalAlignment="Center"
+                       RadiusX="10" RadiusY="10" Height="50" Width="65" Margin="10,0,0,0">
+                <Rectangle.Fill>
+                    <ImageBrush RenderOptions.BitmapScalingMode="HighQuality" ImageSource="/Assets/Flags/pirate-flag.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,16,0,0">
+                <TextBlock Text="Free server 01" Foreground="#5d6067" FontFamily="/assets/fonts/#acrom medium"
+                           Margin="0,0,0,2" FontSize="11"/>
+                <TextBlock Text="Country" Foreground="White" FontFamily="/assets/fonts/#acrom bold" FontSize="11"/>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"
+                       FontFamily="/assets/fonts/#acrom medium"
+                       Margin="0,0,7,0">
+                <Run Text="24"/>
+                <Run Text="MS"/>
+            </TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,60,0">
+                <Border BorderThickness="0" Background="#994BCE4D" Height="9" Width="3" CornerRadius="1" VerticalAlignment="Bottom"/>
+                <Border BorderThickness="0" Background="#994BCE4D" Height="15" Width="3" CornerRadius="1" VerticalAlignment="Bottom" Margin="1,0,0,0"/>
+                <Border BorderThickness="0" Background="#994BCE4D" Height="19" Width="3" CornerRadius="1" VerticalAlignment="Bottom" Margin="1,0,0,0"/>
+                <Border BorderThickness="0" Background="#99808080" Height="23" Width="3" CornerRadius="1" VerticalAlignment="Bottom" Margin="1,0,0,0"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>
